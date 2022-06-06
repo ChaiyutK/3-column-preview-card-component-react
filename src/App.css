@@ -1,38 +1,106 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+body{
+  font-family: 'Lexend Deca', sans-serif;
+  background-color: hsl(0, 0%, 95%);
+}
+.maincontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 800px;
+  height: 450px;
+}
+.container-box{
+  padding: 40px;
+  width: 20%;
+}
+button{
+  font-family: 'Lexend Deca', sans-serif;
+  margin-top: 70px;
+  border-radius: 25px;
+  padding: 10px 20px;
+  border: none;
+  background-color: white;
+}
+button:hover{
+  background-color: transparent;
+  border: 2px solid white;
+}
+h1{
+  font-family: 'Big Shoulders Display', cursive;
+  color: white;
+}
+p{
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.Sedans{
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.Sedans .container-item button{
+  color: hsl(31, 77%, 52%);
+}
+.Sedans .container-item button:hover{
+  color: white;
+}
+.SUVs{
+  background-color: hsl(184, 100%, 22%);
+}
+.SUVs .container-item button{
+  color: hsl(184, 100%, 22%);
+}
+.SUVs .container-item button:hover{
+  color: white;
+}
+.Luxury{
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.Luxury .container-item button{
+  color: hsl(179, 100%, 13%);
+}
+.Luxury .container-item button:hover{
+  color: white;
+}
+.attribution{
+  width: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (max-width:800px) {
+  .container{
+    width: 350px;
+    height:1200px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .container-box{
+    padding: 40px;
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  .maincontainer{
+    height: 200vh;
+  }
+  .Sedans{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .Luxury{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
   }
 }
